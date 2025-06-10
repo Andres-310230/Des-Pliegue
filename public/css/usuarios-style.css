@@ -1,0 +1,85 @@
+/* Colores base */
+:root {
+    --primary-color: #d4af37;   /* dorado */
+    --secondary-color: #111111; /* negro profundo */
+    --text-color: #f5f5f5;      /* blanco suave */
+    --hover-color: #bfa234;     /* dorado oscuro */
+    --danger-color: #c0392b;
+    --warning-color: #f39c12;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+.table {
+    background-color: #222;
+    color: var(--text-color);
+    border-color: var(--primary-color);
+}
+
+.table thead {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: #333;
+}
+
+.btn {
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.btn-secondary {
+    background-color: #444;
+    border-color: #444;
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--secondary-color);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: var(--text-color);
+}
+
+.alert-success {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+}

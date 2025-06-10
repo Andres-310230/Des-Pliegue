@@ -1,0 +1,111 @@
+/* Colores base */
+:root {
+    --primary-color: #d4af37;   /* dorado */
+    --secondary-color: #111111; /* negro profundo */
+    --text-color: #f5f5f5;      /* blanco suave */
+    --hover-color: #bfa234;     /* dorado oscuro */
+    --button-bg-color: #444;    /* gris oscuro para los botones */
+    --alert-danger-color: #c0392b;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.alert-danger {
+    background-color: var(--alert-danger-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #222;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+select.form-control {
+    background-color: #222;
+    border: 1px solid var(--primary-color);
+}
+
+button {
+    font-weight: bold;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-success:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.btn-secondary {
+    background-color: #444;
+    border-color: #444;
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}
+
+/* Diseño de los botones de formulario */
+.btn {
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}

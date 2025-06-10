@@ -1,0 +1,150 @@
+/* Colores base */
+:root {
+    --primary-color: #d4af37;   /* dorado */
+    --secondary-color: #111111; /* negro profundo */
+    --text-color: #f5f5f5;      /* blanco suave */
+    --hover-color: #bfa234;     /* dorado oscuro */
+    --button-bg-color: #444;    /* gris oscuro para los botones */
+    --alert-success-color: #2ecc71;
+    --btn-border-radius: 5px;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    background-color: var(--alert-success-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.table {
+    background-color: #222;
+    color: var(--text-color);
+    border-color: var(--primary-color);
+}
+
+.table-light {
+    background-color: #333;
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px;
+}
+
+.table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #333;
+}
+
+.table img {
+    max-width: 80px;
+    border-radius: 5px;
+}
+
+.text-muted {
+    color: #888;
+}
+
+.btn {
+    font-weight: bold;
+    border-radius: var(--btn-border-radius);
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.btn-secondary {
+    background-color: #444;
+    border-color: #444;
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    border-color: #f39c12;
+    color: var(--secondary-color);
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+.btn-danger {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    color: var(--text-color);
+}
+
+.btn-danger:hover {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+form {
+    display: inline;
+}
+
+form button {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Espaciado de botones */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+/* Estilo para las celdas de las fotos */
+img {
+    max-width: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+}
