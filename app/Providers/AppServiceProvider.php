@@ -33,6 +33,7 @@ use App\Interfaces\ProductoServiceInterface;
 use App\Services\ProductoService;
 use App\Services\EventoService;
 use App\Interfaces\EventoServiceInterface;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -61,8 +62,11 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
+
     public function boot(): void
     {
-        //
-    }
+        if (env('APP_ENV') === 'production') {
+            URL::forceScheme('https');
+        }
+}
 }
