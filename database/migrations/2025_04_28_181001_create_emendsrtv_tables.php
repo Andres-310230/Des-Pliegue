@@ -58,7 +58,7 @@ class CreateEmendsrtvTables extends Migration
 
         // Tabla eventos
         Schema::create('eventos', function (Blueprint $table) {
-            $table->increments('idEventos');
+            $table->id('Eventos_idEventos'); // crea unsignedBigInteger + PK automáticamente
             $table->string('Titulo', 255);
             $table->string('Descripcion', 50);
             $table->dateTime('Fecha_Evento');
@@ -69,13 +69,14 @@ class CreateEmendsrtvTables extends Migration
             $table->id('idCodigoNis');
             $table->string('Descripcion', 100);
             $table->tinyInteger('Disponibilidad');
+
             $table->unsignedBigInteger('Menu_idMenu');
             $table->unsignedBigInteger('Mesa_idMesa');
             $table->unsignedBigInteger('Eventos_idEventos')->nullable();
 
-            $table->foreign('Menu_idMenu')->references('idMenu')->on('menu');
-            $table->foreign('Mesa_idMesa')->references('idMesa')->on('mesa');
-            $table->foreign('Eventos_idEventos')->references('idEventos')->on('eventos');
+            $table->foreign('Menu_idMenu')->references('idMenu')->on('menu')->onDelete('cascade');
+            $table->foreign('Mesa_idMesa')->references('idMesa')->on('mesa')->onDelete('cascade');
+            $table->foreign('Eventos_idEventos')->references('Eventos_idEventos')->on('eventos')->onDelete('set null');
         });
 
         // Tabla entrega
