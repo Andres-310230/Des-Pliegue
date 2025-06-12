@@ -42,7 +42,7 @@
         @endif
 
         <div class="formu">
-            <form action="{{ route('usuarios.codigonis.validar') }}" method="POST" class="mb-4">
+            <form action="{{ route('usuarios.codigonis.') }}" method="POST" class="mb-4">
                 @csrf
                 <input type="text" id="codigo" name="codigo" class="form-control mb-3" placeholder="Código" required />
                 <input type="submit" value="Validar" class="btn btn-primary" />
